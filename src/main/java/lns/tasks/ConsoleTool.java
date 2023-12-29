@@ -10,8 +10,10 @@ public interface ConsoleTool {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         scanner.close();
-        return Arrays.stream(input.split(" "))
+        List<Integer> list = Arrays.stream(input.split(" "))
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
+
+        return list;
     }
 }

@@ -2,6 +2,7 @@ package lns;
 
 import lns.tasks.Task1;
 import lns.tasks.Task2;
+import lns.tasks.Task3;
 
 import java.util.Scanner;
 
@@ -20,6 +21,11 @@ public class Main {
             case "2":
                 Task2 task2 = new Task2();
                 task2.execute();
+                scanner.close();
+                break;
+            case "3":
+                Task3 task3 = new Task3();
+                task3.execute();
                 scanner.close();
                 break;
         }
