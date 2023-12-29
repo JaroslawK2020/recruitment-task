@@ -13,7 +13,6 @@ public interface ConsoleTool {
         List<Integer> list = Arrays.stream(input.split(" "))
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
-
         return list;
     }
 }
