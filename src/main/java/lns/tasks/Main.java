@@ -23,6 +23,9 @@ public class Main {
                 task3.execute();
                 scanner.close();
                 break;
+            default:
+                System.out.println("Invalid task number");
+                scanner.close();
         }
     }
 }
